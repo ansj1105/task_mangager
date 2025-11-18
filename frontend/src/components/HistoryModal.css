@@ -1,0 +1,168 @@
+.history-modal {
+  max-width: 800px;
+  max-height: 90vh;
+}
+
+.history-content {
+  max-height: 60vh;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.history-loading,
+.history-empty {
+  text-align: center;
+  padding: 32px;
+  color: #9aa0a6;
+  font-size: 14px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history-item {
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.history-item-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.history-operation {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.history-operation-insert {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.history-operation-update {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.history-operation-delete {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.history-status {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.history-status-committed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.history-status-rolled_back {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.history-date {
+  margin-left: auto;
+  font-size: 12px;
+  color: #5f6368;
+}
+
+.history-diff {
+  margin-top: 12px;
+}
+
+.history-diff-combined {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e8eaed;
+}
+
+.history-diff-section {
+  margin-bottom: 8px;
+}
+
+.history-diff-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5f6368;
+  margin-bottom: 4px;
+}
+
+.history-diff-old,
+.history-diff-new {
+  background-color: #f8f9fa;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+  margin: 0;
+}
+
+.history-diff-old {
+  background-color: #ffebee;
+}
+
+.history-diff-new {
+  background-color: #e8f5e9;
+}
+
+.history-changes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-change-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.history-change-key {
+  font-weight: 500;
+  color: #3c4043;
+  min-width: 100px;
+}
+
+.history-change-old {
+  color: #c62828;
+  text-decoration: line-through;
+}
+
+.history-change-arrow {
+  color: #5f6368;
+}
+
+.history-change-new {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #dadce0;
+}
+
