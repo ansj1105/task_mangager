@@ -43,6 +43,11 @@ psql -U postgres -d task_check -f database/schema.sql
 cd backend
 cp .env.example .env
 # .env 파일을 열어서 데이터베이스 정보 수정
+
+cd ../frontend
+cp .env.example .env
+# 개발용은 기본값(/api) 유지, 프로덕션 배포 시에는 백엔드 전체 URL 입력
+# 예: VITE_API_BASE_URL=https://your-domain.com/api
 ```
 
 ### 4. 실행
